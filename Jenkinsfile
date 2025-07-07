@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "Balajiu97/Jenkinsfile-1:latest"
+        IMAGE_NAME = "Balajiu97/jenkinsfile-1:latest"
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/main']],
                           userRemoteConfigs: [[
-                              url: "https://github.com/Balajiu97/Jenkinsfile-1.git"
+                              url: "https://github.com/Balajiu97/jenkinsfile-1.git"
                           ]]
                 ])
             }
