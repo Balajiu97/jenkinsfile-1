@@ -11,7 +11,7 @@ pipeline {
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/main']],
                           userRemoteConfigs: [[
-                              url: "https://github.com/Balajiu97/jenkinsfile-1.git"
+                              url: "https://github.com/Balajiu97/jenkinsfi.git"
                           ]]
                 ])
             }
